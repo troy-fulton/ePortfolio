@@ -6,5 +6,8 @@ body {
     font-size: 30px;
 }
 h2.indent {
-    text-indent: 50px;
+    text-indent: 5%;
+}
+p.indent {
+    text-indent: 5%;
 }
