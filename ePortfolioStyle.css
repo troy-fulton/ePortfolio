@@ -11,3 +11,8 @@ h2.indent {
 p.indent {
     text-indent: 5%;
 }
+.pic_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
