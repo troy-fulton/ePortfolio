@@ -1,5 +1,5 @@
 body {
-    background-color: #f0ede5;
+    background-image: url("wood.jpg");
 }
 {
     font-family: "Georgia";
@@ -11,8 +11,38 @@ h2.indent {
 p.indent {
     text-indent: 5%;
 }
-.pic_center {
+img.pic_center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 35.351562%;
+}
+body.background {
+    opacity: 0.5;
+}
+ol {
+    list-style-type: none;
+    float: left;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+li.pad {
+    padding-left: 20px;
+}
+li.doublepad {
+    padding-left: 40px;
+}
+a {
+    text-decoration: none;
+    color: maroon;
+    font-weight: bold;
+}
+p {
+    display: block;
+}
+p.footer {
+    bottom: 0px;
+}
+p.middleparagraph {
+    margin-left: 25%;
+}
 }
