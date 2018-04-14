@@ -1,5 +1,5 @@
 body {
-    background-image: url("wood.jpg");
+    background-image: url("pictures/wood.jpg");
 }
 {
     font-family: "Georgia";
@@ -14,6 +14,10 @@ p.indent {
 img.pic_center {
     display: block;
     margin-left: 35.351562%;
+}
+img.pic_center2 {
+    margin-left: 40.234%;
+    display: block;
 }
 body.background {
     opacity: 0.5;
