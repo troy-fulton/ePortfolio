@@ -42,7 +42,6 @@ p {
 p.footer {
     bottom: 0px;
 }
-p.middleparagraph {
+div.middleparagraph {
     margin-left: 25%;
-}
 }
