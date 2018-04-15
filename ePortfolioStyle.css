@@ -23,9 +23,6 @@ img.floatr {
     margin-right: 400px;
     float: right;
 }
-body.background {
-    opacity: 0.5;
-}
 ol {
     list-style-type: none;
     float: left;
