@@ -49,4 +49,9 @@ p.footer {
 }
 div.middleparagraph {
     margin-left: 25%;
+    margin-right: 25%;
+}
+ul.nobull {
+    margin: 10px;
+    list-style-type: none;
 }
