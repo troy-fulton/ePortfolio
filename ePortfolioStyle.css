@@ -20,9 +20,8 @@ img.pic_center2 {
     margin-left: 40.234%;
 }
 img.floatr {
-    display: block;
-    float: right;
     margin-right: 400px;
+    float: right;
 }
 body.background {
     opacity: 0.5;
