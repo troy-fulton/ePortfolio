@@ -1,0 +1,56 @@
+.aggie-maroon {
+    background-color:silver;
+    color:maroon !important;
+}
+
+.aggie-white, .dropdown-item:hover, .nav-link:hover {
+    background-color:maroon;
+    color:silver !important;
+}
+
+.navbar {
+    background-color:silver !important;
+}
+
+.dropdown-menu {
+    background-color:silver;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.centered-photo {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* For making the footer stay at the bottom: */
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 0 auto;
+}
+footer {
+    background-color: white;
+    color: maroon;
+    flex-shrink: 0;
+}
+
+p {
+    text-align: center
+}
+
+/* For the resume object: */
+object {
+    display: block;
+    margin: 0 auto;
+}
