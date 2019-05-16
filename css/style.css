@@ -3,7 +3,7 @@
     color:maroon !important;
 }
 
-.aggie-white, .dropdown-item:hover, .nav-link:hover {
+.aggie-white, .dropdown-item:hover, .nav-link:hover, .btn:hover {
     background-color:maroon;
     color:silver !important;
 }
@@ -16,8 +16,8 @@
     background-color:silver;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
+.dropdown-item {
+    text-align: center;
 }
 
 .centered-photo {

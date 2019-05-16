@@ -95,12 +95,14 @@ function makeNavbarLink(navbar, i) {
 function makeNavbarDropdown(navbar, i) {
     var menuItem = document.createElement("li");
     menuItem.className = "dropdown nav-item";
+    menuItem.setAttribute("align", "center");
 
     var dropButton = document.createElement("a");
-    dropButton.className = "nav-link";
+    dropButton.className = "btn dropdown-toggle";
     dropButton.textContent = menuOptions[i];
-    dropButton.href = htmlPath +  refList[menuOptions[i]];
-    dropButton.setAttribute("align", "center");
+    dropButton.setAttribute("role", "button");
+    dropButton.setAttribute("id", "dropdownMenuLink");
+    dropButton.setAttribute("data-toggle", "dropdown");
     colorItem(dropButton, "maroon");
     menuItem.appendChild(dropButton);
 
@@ -112,13 +114,25 @@ function makeNavbarDropdown(navbar, i) {
     var dropdownOptions = dropdownLists[menuOptions[i]];
     var keys = Object.keys(dropdownOptions);
 
+    var mainLink = document.createElement("a");
+    mainLink.textContent = menuOptions[i];
+    mainLink.className = "dropdown-item nav-link";
+    mainLink.href = htmlPath +  refList[menuOptions[i]];
+    colorItem(mainLink, "maroon");
+    menuDiv.appendChild(mainLink);
+    
+    var dropdownDivider = document.createElement("li");
+    dropdownDivider.className = "dropdown-divider";
+    colorItem(dropdownDivider, "maroon");
+    menuDiv.appendChild(dropdownDivider);
+
+
     for (var j = 0; j < keys.length; j++) {
         var itemLink = document.createElement("a");
         itemLink.textContent = keys[j];
-        itemLink.className = "dropdown-item";
+        itemLink.className = "dropdown-item nav-link";
         itemLink.href = htmlPath +  dropdownOptions[keys[j]];
         colorItem(itemLink, "maroon");
-        itemLink.setAttribute("align", "center");
         menuDiv.appendChild(itemLink);
     }
 
