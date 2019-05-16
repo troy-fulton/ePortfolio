@@ -49,6 +49,10 @@ p {
     text-align: center
 }
 
+a {
+    color: maroon;
+}
+
 /* For the resume object: */
 object {
     display: block;
