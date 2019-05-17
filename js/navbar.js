@@ -67,7 +67,7 @@ divTag.appendChild(ulTag);
 navTag.appendChild(divTag);
 // Insert the menu at the beginning of the body:
 var content = document.body.getElementsByTagName("div")[0];
-content.insertBefore(navTag, content.childNodes[0]);
+document.body.insertBefore(navTag, document.body.childNodes[0]);
 
 // Then the cool stuff:
 
