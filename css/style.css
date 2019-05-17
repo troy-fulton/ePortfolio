@@ -20,6 +20,21 @@
     text-align: center;
 }
 
+.centered-item {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* For pictures */
+
+.image-left {
+    float: left;
+    vertical-align: middle;
+    margin: 1%;
+}
+
 .centered-photo {
     display:block;
     margin-left:auto;
@@ -45,8 +60,10 @@ footer {
     flex-shrink: 0;
 }
 
-p {
-    text-align: center
+p.main {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 a {
