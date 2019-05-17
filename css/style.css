@@ -1,3 +1,5 @@
+/* Colors */
+
 .aggie-maroon {
     background-color:silver;
     color:maroon !important;
@@ -8,16 +10,22 @@
     color:silver !important;
 }
 
+/* Navbar improvement */
+
 .navbar {
     background-color:silver !important;
 }
-
 .dropdown-menu {
     background-color:silver;
 }
-
 .dropdown-item {
     text-align: center;
+}
+
+/* Spacing */
+
+.title {
+    margin-top: 2%;
 }
 
 .centered-item {
@@ -27,51 +35,74 @@
     margin-bottom: 1%;
 }
 
-/* For pictures */
+.wide-10 {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.wide-5 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.wide-25 {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.space-top {
+    margin-top: 5%;
+}
+.space-bottom {
+    margin-bottom: 5%;
+}
+
+.col-sm {
+    background-color: purple;
+}
+
+/* Pictures */
 
 .image-left {
     float: left;
     vertical-align: middle;
-    margin: 1%;
 }
 
 .centered-photo {
     display:block;
     margin-left:auto;
     margin-right:auto;
-    margin-top: 1%;
-    margin-bottom: 1%;
+}
+
+.stretchy {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* For making the footer stay at the bottom: */
-html, body {
-    height: 100%;
-}
-body {
-    display: flex;
-    flex-direction: column;
-}
-.content {
-    flex: 1 0 auto;
-}
-footer {
-    background-color: white;
-    color: maroon;
-    flex-shrink: 0;
-}
 
-p.main {
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-a {
-    color: maroon;
-}
-
-/* For the resume object: */
+/* Resume object */
 object {
     display: block;
     margin: 0 auto;
+}
+
+/* General */
+
+div.container a {
+    color: maroon;
+    font-weight: bold;
+}
+
+img {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
