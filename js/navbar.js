@@ -14,7 +14,8 @@ var dropdownLists = {
     "Education": {
         "Coursework":"coursework.html",
         "Research":"research.html",
-        "My resume":"resume.html"
+        "My resume":"resume.html",
+        "Study Abroad":"studyAbroad.html"
     },
     "Skills": {
         "Computer Science":"computerSkills.html",
