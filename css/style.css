@@ -74,6 +74,11 @@
     vertical-align: middle;
 }
 
+.image-right {
+    float: right;
+    vertical-align: middle;
+}
+
 .centered-photo {
     display:block;
     margin-left:auto;
