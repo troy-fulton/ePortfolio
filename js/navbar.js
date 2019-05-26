@@ -7,7 +7,7 @@ var refList ={
     "About Me":"aboutMe.html",
     "Education":"education.html",
     "Experience":"experience.html",
-    "Activities":"activitiesAndLeadership.html",
+    "Activities":"activities.html",
     "Skills":"skills.html"
 };
 var dropdownLists = {
@@ -23,7 +23,9 @@ var dropdownLists = {
         "Honors/Awards":"honorsAndAwards.html"
     },
     "Activities": {
-        "Community Service":"communityService.html"
+        "Community Service":"communityService.html",
+        "University Honors":"UHonors.html",
+        "Engineering Honors":"EHonors.html"
     },
     "Experience" : {
         "Jobs, Internships, and Coops":"jobsInternshipsCoops.html",
