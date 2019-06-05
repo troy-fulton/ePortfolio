@@ -28,8 +28,9 @@ var dropdownLists = {
         "Engineering Honors":"EHonors.html"
     },
     "Experience" : {
-        "Jobs, Internships, and Coops":"jobsInternshipsCoops.html",
-        "Other Work Experience":"otherWork.html"
+        "Lockheed Martin":"lockheedMartin.html",
+        "Texas Instruments":"TI.html",
+        "Other Work":"otherWork.html"
     }
 };
 var htmlPath;
