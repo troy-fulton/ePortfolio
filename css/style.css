@@ -15,6 +15,17 @@
     box-shadow: none;
 }
 
+.ti-button:hover {
+    background-color:red;
+    color:white !important;
+    box-shadow: none;
+}
+.lockheed-button:hover {
+    background-color:blue;
+    color:silver !important;
+    box-shadow: none;
+}
+
 /* Navbar improvement */
 
 .navbar {
