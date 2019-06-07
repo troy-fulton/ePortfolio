@@ -101,7 +101,7 @@ function makeNavbarDropdown(navbar, i) {
     menuItem.setAttribute("align", "center");
 
     var dropButton = document.createElement("a");
-    dropButton.className = "btn";
+    dropButton.className = "btn nav-link";
     dropButton.textContent = menuOptions[i];
     dropButton.setAttribute("role", "button");
     dropButton.setAttribute("id", "dropdownMenuLink");
