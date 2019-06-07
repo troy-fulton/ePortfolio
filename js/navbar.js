@@ -60,8 +60,6 @@ navButton.className = "navbar-toggler";
 navButton.setAttribute("type", "button");
 navButton.setAttribute("data-toggle", "collapse");
 navButton.setAttribute("data-target", "#navbarSupportedContent");
-navButton.setAttribute("aria-controls", "navbarSupportedContent");
-navButton.setAttribute("aria-expanded", "false");
 navButton.setAttribute("aria-label", "Toggle navigation");
 var collapseLogo = document.createElement("span");
 collapseLogo.className = "navbar-toggler-icon";
@@ -103,7 +101,7 @@ function makeNavbarDropdown(navbar, i) {
     menuItem.setAttribute("align", "center");
 
     var dropButton = document.createElement("a");
-    dropButton.className = "btn dropdown-toggle";
+    dropButton.className = "btn";
     dropButton.textContent = menuOptions[i];
     dropButton.setAttribute("role", "button");
     dropButton.setAttribute("id", "dropdownMenuLink");
