@@ -25,7 +25,8 @@ var dropdownLists = {
     "Activities": {
         "Community Service":"communityService.html",
         "University Honors":"UHonors.html",
-        "Engineering Honors":"EHonors.html"
+        "Engineering Honors":"EHonors.html",
+        "Hobbies":"hobbies.html"
     },
     "Experience" : {
         "Lockheed Martin":"lockheedMartin.html",
