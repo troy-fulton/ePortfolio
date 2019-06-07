@@ -97,14 +97,13 @@ function makeNavbarLink(navbar, i) {
 
 function makeNavbarDropdown(navbar, i) {
     var menuItem = document.createElement("li");
-    menuItem.className = "dropdown nav-item";
+    menuItem.className = "dropdown";
     menuItem.setAttribute("align", "center");
 
     var dropButton = document.createElement("a");
     dropButton.className = "btn nav-link";
     dropButton.textContent = menuOptions[i];
     dropButton.setAttribute("role", "button");
-    dropButton.setAttribute("id", "dropdownMenuLink");
     dropButton.setAttribute("data-toggle", "dropdown");
     colorItem(dropButton, "maroon");
     menuItem.appendChild(dropButton);
