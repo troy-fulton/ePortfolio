@@ -97,7 +97,7 @@ function makeNavbarLink(navbar, i) {
 
 function makeNavbarDropdown(navbar, i) {
     var menuItem = document.createElement("li");
-    menuItem.className = "dropdown";
+    menuItem.className = "dropdown nav-item active";
     menuItem.setAttribute("align", "center");
 
     var dropButton = document.createElement("a");
