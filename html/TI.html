@@ -20,12 +20,12 @@
 
                     <p align="center">
                         <font size="+1">
-                            For much of summer 2019, I will be staying in Sugar Land, Texas to work as 
-                            a Software Engineering Intern with Texas Instruments on the compiler team
-                            in SDTO. I am currently working on a project to improve performance on a DSP
-                            device software, so I am learning a great deal about software pipelining,
+                            For much of summer 2019, I stayed in Sugar Land, Texas to work as 
+                            a Software Engineering Intern with Texas Instruments on the C7x Compiler Team
+                            (Codegen). I worked on a project to increase performance on C7x
+                            device software, so I learned a great deal about software pipelining,
                             SIMD (<u>S</u>ingle <u>I</u>nstruction <u>M</u>ultiple <u>D</u>ata) and 
-                            vectorization, and how compilers work.
+                            VLIW registers, as well as how compilers work.
                         </font>
                     </p>
                 </div>
@@ -35,7 +35,6 @@
 
             <div class="card space-top space-bottom">
                 <div class="card-body">
-
                     <p align="center">
                         <font size="+1">
                             In Spring 2018, I enjoyed learning about computer architecture so much
@@ -46,11 +45,123 @@
                             architecture, which prepared me for the learning curve at TI.
                             I consider myself lucky to get to work at the <a href="https://en.wikipedia.org/wiki/Digital_signal_processor">
                             home of the DSP</a>, and I enjoy learning about the advances in embedded processing
-                            and analog technology in its past, present, and future.
+                            and analog technology in its past, present, and future. Below is a EVMK2EX K2E Development Board,
+                            an example of an SoC using a C66x and ARM processor. 
                         </font>
                     </p>
+                </div>
+            </div>
 
-                    
+            <img class="centered-photo" src="http://www.ti.com/diagrams/med_evmk2ex_xevmk2ex-image-board.jpg">
+
+            <div class="card space-top space-bottom">
+                <div class="card-body">
+                    <p align="center">
+                        <font size="+1">
+                            On Codegen, I had a much more deeply technical role than I had at Lockheed Martin.
+                            Since much of the DSP industry that uses TI products (such as cellular infrastructure
+                            and communications equipment) uses the C6000 product line, much of the software
+                            written for C6x products heavily utilizes intrinsics, as was 
+                            <a href="http://www.ti.com/lit/wp/spry281/spry281.pdf">advertised (see "intrinsics" section
+                            on page 8)</a>. Now that TI's new C7000 archtecture makes heavy use of these legacy
+                            intrinsics, we can utilize the VLIW registers that are 8x wider to widen the
+                            software pipeline to drastically improve performance when migrating C6x code to C7x.
+                            For the 10 weeks I worked for TI this summer, I read/wrote lots of C code from the 
+                            parser to the instruction matcher, as well as learned a few languages internal to
+                            the compiler.
+                        </font>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card space-top space-bottom">
+                <div class="card-body">
+                    <p align="center">
+                        <font size="+2">
+                            Some of my Biggest Takeaways:
+                        </font>
+                    </p>
+                    <font size="+1">
+                        <ul>
+                            <li>
+                                <b>Look for Patterns and Break Problems Down</b>
+                                <p>
+                                    One of the most important observations I made when working with these intrinsics
+                                    was that C6x code (within intrinsics or in user code) tends to treat data a certain
+                                    way. C6x traditionally takes packed data in a 64-bit register, unpacks the data,
+                                    does something with the data, and packs the result back up. Once I noticed this,
+                                    I was able to look at all these 200+ intrinsics and break them down according 
+                                    to which of these three stages they applied to the data in a loop. This gave me
+                                    a way to look for code in the optimizer common to all these three categories of
+                                    data manipulation that I could optimize. Sure enough, I got great overall performance
+                                    hits from each subproject.
+                                </p>
+                            </li>
+                            <li>
+                                <b>What I learn in school really matters</b>
+                                <p>
+                                    To complete this project, I had to understand the C language and how compilers
+                                    parse source code and optimize the abstract syntax tree. Thankfully, I learned
+                                    how compilers work from my programming languages class, and my MCU classes
+                                    taught me about the computer architecture concept of SIMD and vector registers.
+                                    Additionally, many of my teammates hold graduate degrees in the field of 
+                                    computer science, several of whom wrote their thesis on the work they did at TI.
+                                </p>
+                            </li>
+                            <li>
+                                <b>Leadership and Technical Skill are Equally Important</b>
+                                <p>
+                                    TI has both a Technical and Management ladder for promoting employees who 
+                                    demonstrate technical or menagerial leadership to their peers. I met many senior
+                                    members who taught me that TI values individual contributions to both leading
+                                    a team and contributing deep technical knowledge.
+                                </p>
+                            </li>
+                            <li>
+                                <b>Practice Presenting Technically is Always Helpful</b>
+                                <p>
+                                    One thing I identified from my final presentation that I could do better in 
+                                    my career is presenting technically to a diverse audience. I had difficulty
+                                    targeting my presentation to both the technically savvy and the first
+                                    time programmers, and I figured that if I practice at events like hackathons
+                                    and in class projects during my last year at Texas A&M University, I could
+                                    get much better at it before I start working full time.
+                                </p>
+                            </li>
+                            <li>
+                                <b>Agile is Different in Practice from the Theory</b>
+                                <p>
+                                    Throughout this internship, I practiced Agile through TI's Jira system.
+                                    I filed stories and bugs as they came up and as I broke my project down
+                                    into pieces, and reported on my project each day. Every iteration (every
+                                    2 weeks), my team got together to share what got done on that iteration
+                                    and what is coming up in the next one. During these meetings, we 
+                                    analyze our long-term progress and check on the backlog status.
+                                </p>
+                            </li>
+                            <li>
+                                <b>Failing Fast and Asking Questions Soon Really Does Help</b>
+                                <p>
+                                    Towards the beginning of my internship, I tried to solve too many problems
+                                    by myself and spent too much time struggling with one blocking issue. I learned
+                                    that asking questions, no matter how stupid they may seem, could lead to 
+                                    insights about something no one has ever seen. Some of my best learning 
+                                    opportunities were when I caused a nighly validation to fail.
+                                </p>
+                            </li>
+                        </ul>
+                    </font>
+                </div>
+            </div>
+
+            <div class="card space-top space-bottom">
+                <div class="card-body">
+                    <p align="center">
+                        <font size="+1">
+                            Learn more about TI's DSP product line and the applications of
+                            such <a href="http://www.ti.com/processors/digital-signal-processors/overview.html">here</a>.
+                        </font>
+                    </p>
                 </div>
             </div>
         </div>
