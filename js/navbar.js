@@ -1,20 +1,20 @@
 // Code for forming a good navigation bar at the top of the page
 
 // Menu Data (someday read from a file)
-var menuOptions = ["Home", "About Me", "Education", "Experience", "Activities", "Skills"];
+var menuOptions = ["Home", "About Me", "Education", "Experience", "Activities", "Skills", "Resume"];
 var refList ={
     "Home":"../index.html",
     "About Me":"aboutMe.html",
     "Education":"education.html",
     "Experience":"experience.html",
     "Activities":"activities.html",
-    "Skills":"skills.html"
+    "Skills":"skills.html",
+    "Resume":"resume.html"
 };
 var dropdownLists = {
     "Education": {
         "Coursework":"coursework.html",
         "Research":"research.html",
-        "My resume":"resume.html",
         "Study Abroad":"studyAbroad.html"
     },
     "Skills": {
