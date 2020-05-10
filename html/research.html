@@ -11,190 +11,91 @@
 <body>
 
     <div class="content">
-
+        <h2 class="title" align="center">Research</h2>
             <div class="container">
                 <div class="row">
                     <div class="col">
-
-                        <h2 class="title" align="center">Research</h2>
-
-                        
                         <div class="card space-top space-bottom">
                             <div class="card-body">
-                                <h3><a href = "https://launch.tamu.edu/Undergraduate-Research/Undergraduate-Research-Scholars-(thesis)">
-                                Undergraduate Research Scholars</a></h3>
-                                <p>
-                                    Throughout my senior year at Texas A&M University, I will be investigating On-chip Network 
-                                    Active Routing with Dr. E.J. Kim and the 
-                                    <a href="http://faculty.cs.tamu.edu/ejkim/HPC_WEB/research_2015.html">HPCL</a>. I have been
-                                    actively researching algorithms for improving performance in networks of Hybrid Memory Cubes,
-                                    as I described in the proposal I submitted below. Note that this is just a rough draft and
-                                    that my Thesis is currently (as of 12/14/2019) a work in progress.
-                                </p>
+                                <a data-toggle="collapse" href="#tamu" role="button"
+                                    aria-expanded="true" aria-controls="tamu">
+                                    <h2>Undergraduate at Texas A&M University (2016-2020)</h2>
+                                </a>
+                                <div class="collapse" id="tamu">
+                                    <div class="card space-top space-bottom">
+                                        <div class="card-body">
+                                            <h3><a href = "https://launch.tamu.edu/Undergraduate-Research/Undergraduate-Research-Scholars-(thesis)">
+                                            Undergraduate Research Scholars</a></h3>
+                                            <p>
+                                                For my undergraduate thesis, I worked on a project with my Computer Organization 
+                                                professor, Dr. E.J. Kim, and the 
+                                                <a href="http://faculty.cs.tamu.edu/ejkim/HPC_WEB/research_2015.html">HPCL</a>. Although
+                                                this experience was not my first in research, I am proud of what we have accomplished
+                                                in this thesis. I cannot post the full thesis because of an embargo hold for a journal
+                                                paper, but here is the abstract describing the contribution to the previously
+                                                published <a href="http://faculty.cs.tamu.edu/ejkim/HPC_WEB/docs/hpca19-active-routing.pdf">Active-Routing</a> 
+                                                paper:
+                                            </p>
 
-                                <h4>Proposal for "Active Routing: Parallelization and Scheduling of 3D-Memory Vault 
-                                    Computations"</h4>
+                                            <div class="card space-top space-bottom">
+                                                <div class="card-body">
+                                                    <p>
+                                                        In an age where big data is more available than ever, new high-bandwidth, low-latency
+                                                        memory technology, such as Hybrid Memory Cubes (HMC), have extended into the third dimension
+                                                        to tighten the increasing gap between memory and CPU speeds. Processing power built into
+                                                        these new 3D memory technologies allows CPU cores to offload computations to memory, leading
+                                                        to recent interest in the design space of Processing-In-Memory (PIM) when several HMC units
+                                                        are chained together in a network. Using topology-oblivious Active-Routing techniques in such a
+                                                        network, computations like dot products over a large set of data can be distributed across a virtual
+                                                        "tree" such that partial results are compounded at every branch "on the way" back to the CPU.
+                                                    </p>
 
-                                <div class="card-body">
+                                                    <p>
+                                                        We propose driving performance of Active-Routing by offloading computations to memory
+                                                        with high throughput offloading techniques. We present Vault-Level Parallelism to further
+                                                        parallelize computations by strategically dispatching computations to DRAM vault controllers
+                                                        within each HMC. Our new implementation distributes the resources of Active-Routing to each
+                                                        of the vault controllers in each HMC so as to reduce contention for compute resources. We simulate
+                                                        our implemented techniques and assess their performance using previously developed microbenchmarks
+                                                        and a widely accepted benchmark in scientific computing. The evaluation results show
+                                                        an increase in overall data throughput throughout the Active-Routing Tree with an aggregate 23x
+                                                        speedup.
+                                                    </p>
+                                                </div>
+                                            </div>
 
-                                    <h5>Project Summary</h5>
-                                    <p>
-                                        Recently, the demand for analysis on large data sets has dramatically increased, 
-                                        and in order to keep up with the increasing need for computation in large, multicore 
-                                        systems with several memory units, On-Chip Networks have been widely accepted as the 
-                                        most effective way to move data from one unit to another on a System-On-Chip (SoC). 
-                                        Recently, 3D memory cubes known as Hybrid Memory Cubes (HMC) configured as a grid of
-                                        DRAM vaults with a logic layer for performing simple computations in memory have emerged
-                                        as a new memory architecture. Research proposed by Dr. E. J. Kim for “on the way” 
-                                        computations in the form of “Active Routing,” which takes advantage of a network 
-                                        topology of HMCs to perform certain computations in memory, suggests up to 7x runtime 
-                                        improvement [1]. 
-                                    </p>
-                                    <p>
-                                        We propose that such aggregate computations can be further parallelized 
-                                        by strategically dispatching in-memory computation to separate vaults within each 
-                                        memory cube. After implementing such parallel computations, we plan to investigate 
-                                        if performance can be further improved by dynamically scheduling such computations 
-                                        among the vaults available to the network. Using an architecture simulation testbed 
-                                        for SoCs, we will implement these proposed techniques and assess their performance 
-                                        using industry standard benchmarks.
-                                    </p>
-                                    
-                                    <h5>Introduction</h5>
-                                    <p>
-                                        For much of the history of computer architecture since the mid-1980s, there has 
-                                        been a significant, growing gap between CPU latency and that of memory [2]. To 
-                                        address this memory gap, researchers have designed new memory systems to increase 
-                                        memory bandwidth that extend into the third dimension with Through-Silicon Vias 
-                                        (TSV), such as Hybrid Memory Cubes (HMC) [3]. By stacking layers of DRAM on top 
-                                        of a logic layer, 3D memory not only makes memory denser, but also allows for
-                                        Processing-in-memory (PIM). This means that when the CPU requests data for just 
-                                        a simple arithmetic operation, it can be computed in memory without ever making 
-                                        the time-consuming journey to the CPU, which causes bottlenecks in data-intensive 
-                                        applications.
-                                    </p>
+                                            <p>
+                                                As part of the program, I also presented at the URS Symposium on February 26th, 2020.
+                                                <a href="../docs/Active-Routing Presentation.pdf">Here</a> is the presentation poster.
+                                            </p>
+                                        </div>
+                                    </div> 
 
-                                    <p>
-                                        Often, so much memory is consumed by programs that several of these memory cubes 
-                                        are needed to store large data sets. For components such as these to communicate 
-                                        with one or more CPUs (cores), an interconnection network known as an On-Chip 
-                                        Network is necessary [4]. Since each component of an On-Chip network has a network 
-                                        interface, each component can communicate with other network components by sending 
-                                        and receiving packets of data and interpreting them accordingly. Thus, for the 
-                                        CPU to receive data from memory or to offload computations to memory, it must send 
-                                        a packet to the right HMC unit and wait for the data before it can do anything with it.
-                                    </p>
-
-                                    <p>
-                                        Because many algorithms, such as machine learning, depend on processing large data 
-                                        sets in memory, there is an increased need to improve this memory access latency 
-                                        by taking advantage of the fact that these memory cubes can perform PIM across an 
-                                        On-Chip Network. Since many algorithms in machine learning tend to follow common 
-                                        memory access patterns, such as extracting the dot product of two matrices, 
-                                        researchers have developed ways to optimize these patterns in hardware. One way 
-                                        these patterns can be optimized is by implementing an “Active Routing” Algorithm, 
-                                        introduced by E.J. Kim, where the topology of the network and locations of the 
-                                        data across the network are used to construct an active routing “tree,” such 
-                                        that intermediate computations can be done on the data “on the way” to the CPU 
-                                        along the tree [1].
-                                    </p>
-
-                                    <p>
-                                        In order to lower this latency, I propose that the active routing tree can be 
-                                        further granularized to the level of each vault of a memory cube. The current 
-                                        implementation of Active Routing simply contains one “Active Routing Engine” 
-                                        per HMC, which handles all the processing for the cube. However, since HMCs 
-                                        are further divided into vaults with their own space for computational power, 
-                                        it is worth investigating how much more computation can be done at once with 
-                                        the additional hardware. Since data for an operation are often found together 
-                                        in a vault, computation done in vaults should theoretically improve 
-                                        performance of the active routing algorithms because data are spatially local
-                                        to each other and to their logic unit.
-                                    </p>
-
-                                    <p>
-                                        In the current implementation of “Active Routing,” data are aggregated in the 
-                                        network based on the path that the packets took to get to the memory cube, 
-                                        without considering the network congestion at those points. I propose that by 
-                                        dynamically scheduling computations in other, perhaps nearby cubes, the load 
-                                        of computing aggregate data can be balanced across the network. Finally, with 
-                                        vault-level parallelism implemented, I can modify this algorithm to take 
-                                        advantage of the least busy vaults throughout the network to improve the 
-                                        performance of such computations, generating better throughput for the network.
-                                    </p>
-
-                                    <h5>Objectives/Goals</h5>
-                                    <p>
-                                        My goal is to formulate and implement an algorithm for dividing the computations 
-                                        done in HMCs among the vaults of the logic layer, as well as a scheduling algorithm 
-                                        for scheduling computations at vaults across the network. If computations 
-                                        performed in on-chip memory networks can be divided between the vaults of an 
-                                        HMC and Active Routing Algorithms can dynamically schedule computations to take 
-                                        advantage of such, then the performance of the network will measurably improve.
-                                    </p>
-
-                                    <h5>Methodology</h5>
-                                    <p>
-                                        Under the direction of Dr. E. J. Kim and Jiayi Huang, I plan to use similar 
-                                        methodologies to those used in the Active Routing Paper mentioned above (seen 
-                                        in Table I) [1]. There are several benchmarks used for measuring the performance 
-                                        of matrix operations like those used in Machine Learning algorithms for which our 
-                                        lab has an implementation. By running these algorithms through McSimA+, a simulator 
-                                        for CPU including cores and caches that generate active routing packets, with my 
-                                        implementation of the proposed algorithms in the HMC microarchitecture, I will be 
-                                        able to measure the power consumption of the system and network heuristics. Since 
-                                        the source code is on GitHub, I will only need access to my TAMU GitHub account 
-                                        and the computational power to run simulations and measure performance.
-                                    </p>
-
-                                    <h5>References</h5>
-                                    <p>
-                                        [1] J. Huang, R. Reddy Puli, P. Majumdar, S. K. Kim, R. Boyapati, K. H. Yum and E. J. Kim, “Active-Routing: Compute on the Way for Near Data Processing, ” in Proceedings of 25th IEEE International Symposium on High Performance Computer Architecture (HPCA), Washington D.C, USA, February, 2019.
-                                    </p>
-                                    <p>
-                                        [2] J. Hennessy and D. Patterson, “Memory Hierarchy Design,” in Computer Architecture: A Quantitative Approach, 6th ed. San Mateo, CA, USA: Morgan Kaufmann (Publishers, Inc.), 2019, pp. 80.
-                                    </p>
-                                    <p>
-                                        [3] K. Kondo, M. Kada, K. Takahashi, Eds. Three-Dimensional Integration of Semiconductors: Processing, Materials, and Applications. Switzerland: Springer, Cham, 2015. Accessed: Sept. 10, 2019. [Online]. Available: https://onecellonelightradio.files.wordpress.com/2018/11/three-dimensional-integration-of-semiconductors-2015.pdf
-                                    </p>
-                                    <p>
-                                        [4] N. Jerger, T. Krishna, and L. Peh, “Introduction,” in On-Chip Networks, 2nd ed. San Rafael, CA, USA: Morgan & Claypool, 2017, ch. 1, sec. 1.1, pp. 1-2. [Online]. Available: https://www.morganclaypool.com/doi/pdf/10.2200/S00772ED1V01Y201704CAC040
-                                    </p>
+                                    <div class="card space-top space-bottom">
+                                        <div class="card-body">
+                                            <h3><a href="https://spacecraft-vr.com/">SpaceCRAFT</a></h3>
+                                            <p>In Spring 2017, I participated in Aggie Challenge, a research opportunity available to students at Texas A&M
+                                                University as a class guided by graduate students and professors. I was a part of SpaceCRAFT, an interactive,
+                                                web-based Virtual Reality Platform. SpaceCRAFT's purpose was to allow users from across the globe participate
+                                                in projects collaboratively in order to test expensive, complicated projects in virtual reality simulations in
+                                                order to make real-life decisions. Under the direction of astronaut and professor Dr. Greggory Chamitoff, we
+                                                presented our findings to NASA at the end of the semester. I presented my research on how heightmaps from USGS's
+                                                Astropedia can help SpaceCRAFT create fully functioning, to-scale models of our Solar System to NASA 
+                                                representatives. Our team also presented our simulations at the 2017 Texas A&M Engineering Project Showcase
+                                                <a href="https://www.youtube.com/watch?v=v-CaAMIMeiI">here.</a>
+                                            </p>
+                                
+                                            <a href="../docs/SpaceCRAFT_World_Design.pptx" download>Click here to download the slides for one of our
+                                                presentations.</a>
+                                        </div> 
+                                    </div>
                                 </div>
-                                <p>
-                                    The rest of the details of the proposal can be seen in 
-                                    <a href="../docs/Proposal.pdf">the pdf attached</a>.
-                                </p>
-                                <p>
-                                    I am currently in the process of writing my thesis and producing the results of my experiments
-                                    before I present my research in the Spring semester.
-                                </p>
                             </div>
-                        </div> 
-
-                        <div class="card space-top space-bottom">
-                            <div class="card-body">
-                                <h3><a href="https://spacecraft-vr.com/">SpaceCRAFT</a></h3>
-                                <p>In Spring 2017, I participated in Aggie Challenge, a research opportunity available to students at Texas A&M
-                                    University as a class guided by graduate students and professors. I was a part of SpaceCRAFT, an interactive,
-                                    web-based Virtual Reality Platform. SpaceCRAFT's purpose was to allow users from across the globe participate
-                                    in projects collaboratively in order to test expensive, complicated projects in virtual reality simulations in
-                                    order to make real-life decisions. Under the direction of astronaut and professor Dr. Greggory Chamitoff, we
-                                    presented our findings to NASA at the end of the semester. I presented my research on how heightmaps from USGS's
-                                    Astropedia can help SpaceCRAFT create fully functioning, to-scale models of our Solar System to NASA 
-                                    representatives. Our team also presented our simulations at the 2017 Texas A&M Engineering Project Showcase
-                                    <a href="https://www.youtube.com/watch?v=v-CaAMIMeiI">here.</a>
-                                </p>
-                    
-                                <a href="../docs/SpaceCRAFT_World_Design.pptx" download>Click here to download the slides for one of our
-                                    presentations.</a>
-                            </div> 
                         </div>
                     </div>
                 </div>
             </div>
-
-        
+        </div>
     </div>
     <script src="../js/boilerplate.js"></script>
     <script src="../js/navbar.js"></script>
@@ -204,6 +105,12 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".collapse#tamu").collapse('show');
+        });
+    </script>
 </body>
 
 </html>
